@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.caiquecosta.piggybank.MainActivity"
+    android:background="#F8BBD0">
+
+    <EditText
+        android:id="@+id/TotalAmountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Savings:"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="68dp" />
+
+    <Button
+        android:id="@+id/pennyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TotalAmountText"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="84dp"
+        android:background="#EF9A9A"
+        android:text="Penny"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="182dp" />
+
+    <Button
+        android:id="@+id/nickelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pennyButton"
+        android:layout_alignBottom="@+id/pennyButton"
+        android:layout_centerHorizontal="true"
+        android:background="#EF9A9A"
+        android:text="Nickel"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="182dp" />
+
+    <Button
+        android:id="@+id/quarterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nickelButton"
+        android:layout_alignBottom="@+id/nickelButton"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_toEndOf="@+id/nickelButton"
+        android:layout_toRightOf="@+id/nickelButton"
+        android:background="#EF9A9A"
+        android:text="Quarter"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="299dp" />
+
+    <Button
+        android:id="@+id/dollarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#EF9A9A"
+        android:text="Dollar"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="211dp"
+        tools:layout_editor_absoluteY="299dp"
+        android:layout_below="@+id/quarterButton"
+        android:layout_alignLeft="@+id/quarterButton"
+        android:layout_alignStart="@+id/quarterButton" />
+
+    <Button
+        android:id="@+id/dimeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dollarButton"
+        android:layout_alignBottom="@+id/dollarButton"
+        android:layout_alignLeft="@+id/pennyButton"
+        android:layout_alignStart="@+id/pennyButton"
+        android:background="#EF9A9A"
+        android:text="Dime"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/negPennyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dimeButton"
+        android:layout_alignStart="@+id/dimeButton"
+        android:layout_below="@+id/dimeButton"
+        android:layout_marginTop="17dp"
+        android:background="@android:color/background_light"
+        android:text="-Penny"
+        android:textColor="#EF9A9A"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/negNickelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nickelButton"
+        android:layout_alignStart="@+id/nickelButton"
+        android:layout_alignTop="@+id/negPennyButton"
+        android:background="@android:color/background_light"
+        android:text="-Nickel"
+        android:textColor="#EF9A9A"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/negQuarterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dollarButton"
+        android:layout_alignStart="@+id/dollarButton"
+        android:layout_alignTop="@+id/negNickelButton"
+        android:background="@android:color/background_light"
+        android:text="-quarter"
+        android:textColor="#EF9A9A"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/negDimeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TotalAmountText"
+        android:layout_alignStart="@+id/TotalAmountText"
+        android:layout_below="@+id/negPennyButton"
+        android:layout_marginTop="22dp"
+        android:background="@android:color/background_light"
+        android:text="-dime"
+        android:textColor="#EF9A9A"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/negDollarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/negDimeButton"
+        android:layout_alignEnd="@+id/TotalAmountText"
+        android:layout_alignRight="@+id/TotalAmountText"
+        android:background="@android:color/background_light"
+        android:text="-dollar"
+        android:textColor="#EF9A9A"
+        android:textStyle="bold" />
+
+</RelativeLayout>
